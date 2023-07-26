@@ -1,6 +1,6 @@
 "use strict";
 
-//Escribe una función que, al recibir un array con la forma del ejemplo a continuación, devuelva un objeto con el número de animales de cada especie. Piensa que el array puede ser modificado para añadir nuevas especies que no estuviesen en el original.
+//Escribe una función que, dados una especie (perro, gato...) y dos arrays con la forma de los ejemplos a continuación, cuente la puntuación total que obtienes al sumar las puntuaciones de los animales de dicha especie.
 
 const animals = [
   {
@@ -79,3 +79,5 @@ const animalScores = [
     score: 16,
   },
 ];
+
+//Escribe una función que, dados una especie (perro, gato...) y dos arrays con la forma de los ejemplos a continuación, cuente la puntuación total que obtienes al sumar las puntuaciones de los animales de dicha especie.

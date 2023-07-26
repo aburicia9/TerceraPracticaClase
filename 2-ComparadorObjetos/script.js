@@ -31,17 +31,20 @@ const obj5 = {
 };
 
 function sonIguales(objA,objB) {
-  
+
   const objeto1 = Object.keys(objA)
   const objeto2= Object.keys(objB)
+
   if(objeto1.length !== objeto2.length){
     return false
   }
   for (let propiedad in objA){
-    if (objA[propiedad] !== objB[propiedad]){
+        if (objA[propiedad] !== objB[propiedad]){
       return false
     }
+    
   }
+  
   return true
 }
 

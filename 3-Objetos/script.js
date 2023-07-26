@@ -78,3 +78,35 @@ function animales(valor){
 
 const contar = animales(animals)
 console.log(contar)
+
+
+
+// function animales(valor) {
+//   let nuevoObjeto = {};
+//   let contador = {};
+
+//   for (let objeto of valor) {
+//     const especie = objeto.species;
+
+//     // Si la especie no está en el objeto contador, inicializar el contador en 1
+//     if (!contador[especie]) {
+//       contador[especie] = 1;
+//     } else {
+//       contador[especie]++;
+//     }
+//   }
+
+//   return contador;
+// }
+
+// const animals = [
+//   { name: 'Lucky', species: 'dog' },
+//   { name: 'Whiskers', species: 'cat' },
+//   { name: 'Cluck', species: 'chicken' },
+//   { name: 'Slither', species: 'snake' },
+//   { name: 'Buddy', species: 'dog' },
+//   // Más animales...
+// ];
+
+// const contar = animales(animals);
+// console.log(contar);

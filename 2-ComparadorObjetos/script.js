@@ -30,7 +30,22 @@ const obj5 = {
   key3: "b",
 };
 
-function sonIguales(objA, objB) {}
+function sonIguales(objA,objB) {
+  
+  const objeto1 = Object.keys(objA)
+  const objeto2= Object.keys(objB)
+  if(objeto1.length !== objeto2.length){
+    return false
+  }
+  for (let propiedad in objA){
+    if (objA[propiedad] !== objB[propiedad]){
+      return false
+    }
+  }
+  return true
+}
+
+
 
 console.log(sonIguales(obj1, obj2)); //true
 console.log(sonIguales(obj1, obj3)); //false

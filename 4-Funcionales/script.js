@@ -80,4 +80,20 @@ const animalScores = [
   },
 ];
 
-//Escribe una función que, dados una especie (perro, gato...) y dos arrays con la forma de los ejemplos a continuación, cuente la puntuación total que obtienes al sumar las puntuaciones de los animales de dicha especie.
+function init (array){
+  const especies = array.map(animal => animal.species)
+  const obj = {}
+  for (const name of especies){
+      if (obj[name] === undefined){
+        obj[name] = 1
+
+      }else{
+        obj[name] += 1
+      }
+  }
+  return obj
+}
+
+const contar = init(animals)
+console.log(contar)
+

@@ -80,20 +80,3 @@ const animalScores = [
   },
 ];
 
-function init (array){
-  const especies = array.map(animal => animal.species)
-  const obj = {}
-  for (const name of especies){
-      if (obj[name] === undefined){
-        obj[name] = 1
-
-      }else{
-        obj[name] += 1
-      }
-  }
-  return obj
-}
-
-const contar = init(animals)
-console.log(contar)
-
